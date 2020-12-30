@@ -1,0 +1,39 @@
+.app-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 15px;
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.app-icon__image {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+}
+
+
+@keyframes iconAnim {
+    0%{
+        transform: rotateZ(10deg);
+    }
+
+    50%{
+        transform: rotateZ(-10deg);
+    }
+
+    100% {
+        transform: rotateZ(10deg);
+    }
+}
+
+.app-icon .app-icon__image:hover {
+    animation: iconAnim 0.3s linear infinite;
+}

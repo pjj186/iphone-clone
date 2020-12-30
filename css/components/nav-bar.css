@@ -1,0 +1,76 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 5px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    box-sizing: border-box;
+    border-radius: 45px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav__icon--image {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+@keyframes NaviconAnim {
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.nav__icon--image:hover {
+    animation: NaviconAnim 0.3s linear infinite;
+}
+
+.nav__icon {
+    position: relative;
+}
+
+
+@keyframes Reddotmove {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translateY(-5px) rotateY(360deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.red-dot {
+    animation: Reddotmove 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+}
