@@ -1,2 +1,3 @@
 # iphone-clone
-ONLY USE HTML &amp; CSS, Iphone clone
+
+HTML,CSS 연습용
